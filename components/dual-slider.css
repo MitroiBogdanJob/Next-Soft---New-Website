@@ -32,7 +32,7 @@
 	scroll-snap-align: start; /* Aliniază imaginile la începutul containerului */
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
 	/* Ajustare pentru ecrane foarte mici */
 	.image-row img {
 		height: 20vw; /* Imagini mai mari pe ecrane foarte mici */
