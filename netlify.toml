@@ -1,9 +1,7 @@
 [build]
-  publish = "out"  # Acesta poate fi diferit în funcție de setup-ul tău Next.js, dacă folosești o altă locație
-  command = "npm run build"
+  command = "npm run export"
+  publish = "out"
 
 [build.environment]
   NODE_ENV = "production"
-
-[build.cache]
-  paths = ["node_modules", ".next/cache"]
+  NODE_VERSION = "18"
