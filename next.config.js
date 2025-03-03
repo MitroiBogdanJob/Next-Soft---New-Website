@@ -2,16 +2,16 @@
 const nextConfig = {
 	output: "export",
 	eslint: {
-		ignoreDuringBuilds: true,
+	  ignoreDuringBuilds: true,
 	},
 	images: {
-		unoptimized: true,
-		remotePatterns: [
-			{
-				protocol: "https",
-				hostname: "images.unsplash.com",
-			},
-		],
+	  unoptimized: true,
+	  remotePatterns: [
+		{
+		  protocol: "https",
+		  hostname: "images.unsplash.com",
+		},
+	  ],
 	},
 	// Disable source maps in production to reduce file size
 	productionBrowserSourceMaps: false,
@@ -21,30 +21,27 @@ const nextConfig = {
 	reactStrictMode: false,
 	// Enable compression
 	compress: true,
-	// Optimize fonts
-	optimizeFonts: true,
-	// Increase build performance
-	swcMinify: true,
-	// Reduce bundle size by excluding certain packages from the client bundle
+	// Remove unsupported "optimizeFonts" and "swcMinify"
 	experimental: {
-		optimizeCss: true,
-		optimizePackageImports: [
-			"lucide-react",
-			"framer-motion",
-			"@radix-ui/react-dropdown-menu",
-		],
+	  optimizeCss: true,
+	  optimizePackageImports: [
+		"lucide-react",
+		"framer-motion",
+		"@radix-ui/react-dropdown-menu",
+	  ],
 	},
 	webpack(config, { isServer }) {
-		if (!isServer) {
-			config.cache = {
-				type: "filesystem", // Activează cache-ul pe disc
-				buildDependencies: {
-					config: [__filename], // Reîncarcă cache-ul dacă se modifică fișierul de configurare
-				},
-			};
-		}
-		return config;
+	  if (!isServer) {
+		config.cache = {
+		  type: "filesystem", // Enable disk cache
+		  buildDependencies: {
+			config: [__filename], // Rebuild cache if the config file is modified
+		  },
+		};
+	  }
+	  return config;
 	},
-};
-
-module.exports = nextConfig;
+  };
+  
+  module.exports = nextConfig;
+  
