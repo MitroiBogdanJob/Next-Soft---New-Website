@@ -2,16 +2,16 @@
 const nextConfig = {
 	output: "export",
 	eslint: {
-	  ignoreDuringBuilds: true,
+		ignoreDuringBuilds: true,
 	},
 	images: {
-	  unoptimized: true,
-	  remotePatterns: [
-		{
-		  protocol: "https",
-		  hostname: "images.unsplash.com",
-		},
-	  ],
+		unoptimized: true,
+		remotePatterns: [
+			{
+				protocol: "https",
+				hostname: "images.unsplash.com",
+			},
+		],
 	},
 	// Disable source maps in production to reduce file size
 	productionBrowserSourceMaps: false,
@@ -23,25 +23,24 @@ const nextConfig = {
 	compress: true,
 	// Remove unsupported "optimizeFonts" and "swcMinify"
 	experimental: {
-	  optimizeCss: true,
-	  optimizePackageImports: [
-		"lucide-react",
-		"framer-motion",
-		"@radix-ui/react-dropdown-menu",
-	  ],
+		optimizeCss: true,
+		optimizePackageImports: [
+			"lucide-react",
+			"framer-motion",
+			"@radix-ui/react-dropdown-menu",
+		],
 	},
 	webpack(config, { isServer }) {
-	  if (!isServer) {
-		config.cache = {
-		  type: "filesystem", // Enable disk cache
-		  buildDependencies: {
-			config: [__filename], // Rebuild cache if the config file is modified
-		  },
-		};
-	  }
-	  return config;
+		if (!isServer) {
+			config.cache = {
+				type: "filesystem", // Enable disk cache
+				buildDependencies: {
+					config: [__filename], // Rebuild cache if the config file is modified
+				},
+			};
+		}
+		return config;
 	},
-  };
-  
-  module.exports = nextConfig;
-  
+};
+
+module.exports = nextConfig;

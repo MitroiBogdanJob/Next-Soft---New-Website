@@ -300,6 +300,7 @@ const translations = {
 	},
 
 	// Footer
+	// Footer
 	"footer.rights": {
 		en: "All Rights Reserved",
 		ro: "Toate Drepturile Rezervate",
@@ -309,6 +310,7 @@ const translations = {
 		ro: "Politica de Confidențialitate",
 	},
 	"footer.terms": {
+		// Adaugă această linie
 		en: "Terms of Service",
 		ro: "Termeni și Condiții",
 	},
