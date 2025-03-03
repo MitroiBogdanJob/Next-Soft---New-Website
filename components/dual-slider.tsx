@@ -2,23 +2,13 @@ import React from "react";
 import { motion } from "framer-motion";
 import "./dual-slider.css";
 
-// Lista combinată cu imaginile pentru slider
-const imagesCombined = [
-	"/images/projects/Project 1.webp",
-	"/images/projects/Mobile 1.webp",
-	"/images/projects/Project 2.webp",
-	"/images/projects/Mobile 2.webp",
-	"/images/projects/Project 3.webp",
-	"/images/projects/Mobile 3.webp",
-	"/images/projects/Project 4.webp",
-	"/images/projects/Mobile 4.webp",
-	"/images/projects/Project 1.webp",
-	"/images/projects/Mobile 1.webp",
-	"/images/projects/Project 5.webp",
-	"/images/projects/Mobile 5.webp",
-];
+// Componentele vor primi imagini din componenta părinte
+interface DualSliderProps {
+	imagesTop: string[];
+	imagesBottom: string[];
+}
 
-const DualSlider: React.FC = () => {
+const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 	return (
 		<div className="dual-slider-container">
 			<h2>Some Text Above</h2> {/* Textul deasupra slider-ului */}
@@ -36,11 +26,11 @@ const DualSlider: React.FC = () => {
 						repeatType: "loop",
 					}}
 				>
-					{[...imagesCombined, ...imagesCombined].map((src, index) => (
+					{[...imagesTop, ...imagesTop].map((src, index) => (
 						<img
-							key={`combined-${index}`}
+							key={`top-${index}`}
 							src={src}
-							alt={`Image ${index + 1}`}
+							alt={`Top Image ${index + 1}`}
 						/>
 					))}
 				</motion.div>
@@ -57,11 +47,11 @@ const DualSlider: React.FC = () => {
 						repeatType: "loop",
 					}}
 				>
-					{[...imagesCombined, ...imagesCombined].map((src, index) => (
+					{[...imagesBottom, ...imagesBottom].map((src, index) => (
 						<img
-							key={`combined-inverted-${index}`}
+							key={`bottom-${index}`}
 							src={src}
-							alt={`Image ${index + 1}`}
+							alt={`Bottom Image ${index + 1}`}
 						/>
 					))}
 				</motion.div>
