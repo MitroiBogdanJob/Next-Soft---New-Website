@@ -1,7 +1,0 @@
-[build]
-  environment = { NODE_ENV = "production" }
-  publish = "out"  
-  command = "npm run build"
-  cache = ["node_modules", ".next/cache"]
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
