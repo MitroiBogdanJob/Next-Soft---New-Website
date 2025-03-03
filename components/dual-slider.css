@@ -1,0 +1,42 @@
+.dual-slider-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+  }
+  
+  .image-row-wrapper {
+	position: relative;
+	width: 100%;
+  }
+  
+  .image-row {
+	width: 100%;
+	display: flex;
+	gap: 5px; /* Reducem și mai mult spațiul dintre imagini */
+	position: relative;
+  }
+  
+  .image-row img {
+	width: auto;
+	height: 170px; /* Imaginile sunt acum cu 15% mai mici */
+	object-fit: cover;
+	border-radius: 8px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media query pentru dispozitive mici */
+  @media (max-width: 410px) {
+	.image-row {
+	  /* Spațiu mic între imagini pe dispozitive mici */
+	  gap: 3px; 
+	}
+  
+	.image-row img {
+	  height: 75px; /* Imaginile vor fi și mai mici pe dispozitive mici */
+	}
+  }
+  
