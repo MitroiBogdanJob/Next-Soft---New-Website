@@ -28,3 +28,14 @@
 	object-fit: cover; /* Asigurăm că imaginile sunt scalate corect fără a se distorsiona */
 	border-radius: 8px;
 }
+
+@media (max-width: 410px) {
+	.image-row {
+		gap: 5px; /* Reducem spațiul între imagini pe dispozitive mici */
+	}
+
+	.image-row img {
+		height: 75px; /* Reducem dimensiunea imaginilor pe dispozitive mici */
+		width: 75px;
+	}
+}
