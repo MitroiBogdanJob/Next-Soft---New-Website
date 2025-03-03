@@ -35,7 +35,7 @@
 @media (max-width: 480px) {
 	/* Ajustare pentru ecrane foarte mici */
 	.image-row img {
-		height: 40vw; /* Imagini mai mari pe ecrane foarte mici */
-		width: 40vw;
+		height: 20vw; /* Imagini mai mari pe ecrane foarte mici */
+		width: 20vw;
 	}
 }
