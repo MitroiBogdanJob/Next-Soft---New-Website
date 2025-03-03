@@ -73,7 +73,6 @@
 	},
 	"devDependencies": {
 		"@next/bundle-analyzer": "^13.5.1",
-		"critters": "^0.0.25",
 		"serve": "^14.2.4",
 		"sharp": "^0.33.5"
 	},
