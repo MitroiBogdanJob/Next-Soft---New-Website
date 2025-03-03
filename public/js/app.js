@@ -19,7 +19,7 @@ particlesJS(
 			number: {
 				value: 60, // Reduced for better performance
 				density: {
-					// da
+					// da d
 					enable: true,
 					value_area: 800,
 				},
