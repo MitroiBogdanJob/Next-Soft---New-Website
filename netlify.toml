@@ -2,8 +2,8 @@
   publish = "out"  # Acesta poate fi diferit în funcție de setup-ul tău Next.js, dacă folosești o altă locație
   command = "npm run build"
 
-[[build.environment]]
+[build.environment]
   NODE_ENV = "production"
 
-[[build.cache]]
+[build.cache]
   paths = ["node_modules", ".next/cache"]
