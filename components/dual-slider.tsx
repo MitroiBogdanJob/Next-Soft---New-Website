@@ -10,9 +10,9 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 	return (
 		<div className="w-full overflow-hidden py-8">
 			{/* Slider pentru imaginile de sus */}
-			<div className="mb-4 relative h-[150px]">
+			<div className="mb-4 relative h-[190px]">
 				<motion.div
-					className="flex absolute"
+					className="flex"
 					initial={{ x: "0%" }}
 					animate={{ x: "-100%" }}
 					transition={{
@@ -24,12 +24,12 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 					{imagesTop.concat(imagesTop).map((src, index) => (
 						<div
 							key={`top-${index}`}
-							className="relative h-[150px] w-[260px] mx-2 rounded-lg overflow-hidden flex-shrink-0"
+							className="relative h-[180px] flex-shrink-0 mx-2"
 						>
 							<img
 								src={src}
 								alt={`Project ${index + 1}`}
-								className="absolute inset-0 w-full h-full object-contain"
+								className="w-full h-full object-cover rounded-lg"
 							/>
 						</div>
 					))}
@@ -37,10 +37,10 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 			</div>
 
 			{/* Slider pentru imaginile de jos */}
-			<div className="relative h-[200px]">
+			<div className="relative h-[190px]">
 				<motion.div
-					className="flex absolute"
-					initial={{ x: "-100%" }}
+					className="flex"
+					initial={{ x: "-190%" }}
 					animate={{ x: "0%" }}
 					transition={{
 						duration: 25,
@@ -51,12 +51,12 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 					{imagesBottom.concat(imagesBottom).map((src, index) => (
 						<div
 							key={`bottom-${index}`}
-							className="relative h-[200px] w-[120px] mx-2 rounded-lg overflow-hidden flex-shrink-0"
+							className="relative h-[180px] flex-shrink-0 mx-2"
 						>
 							<img
 								src={src}
 								alt={`Mobile ${index + 1}`}
-								className="absolute inset-0 w-full h-full object-contain"
+								className="w-full h-full object-cover rounded-lg"
 							/>
 						</div>
 					))}

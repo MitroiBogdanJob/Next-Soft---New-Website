@@ -2,41 +2,40 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	width: 100%;
+	width: 100%; /* Ocupă întreaga lățime */
 	margin: 0 auto;
+	padding: 0; /* Eliminăm padding-ul pentru o aliniere corectă */
 	position: relative;
-	overflow: hidden;
-  }
-  
-  .image-row-wrapper {
+	overflow: hidden; /* Ascunde orice conținut care depășește containerul */
+}
+
+.image-row-wrapper {
 	position: relative;
-	width: 100%;
-  }
-  
-  .image-row {
+	width: 100%; /* Asigură că wrapper-ul ocupă întreaga lățime */
+}
+
+.image-row {
 	width: 100%;
 	display: flex;
-	gap: 5px; /* Reducem și mai mult spațiul dintre imagini */
-	position: relative;
-  }
-  
-  .image-row img {
-	width: auto;
-	height: 170px; /* Imaginile sunt acum cu 15% mai mici */
-	object-fit: cover;
+	gap: 8px; /* Creștem puțin spațiul între imagini */
+	justify-content: flex-start; /* Aliniem imaginile la stânga */
+	overflow: hidden; /* Ascundem orice imagine care depășește containerul */
+}
+
+.image-row img {
+	height: 130px; /* Diminuăm înălțimea imaginilor */
+	width: 130px; /* Diminuăm lățimea imaginilor */
+	object-fit: cover; /* Asigurăm că imaginile sunt scalate corect fără a se distorsiona */
 	border-radius: 8px;
-	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  /* Media query pentru dispozitive mici */
-  @media (max-width: 410px) {
+}
+
+@media (max-width: 410px) {
 	.image-row {
-	  /* Spațiu mic între imagini pe dispozitive mici */
-	  gap: 3px; 
+		gap: 5px; /* Reducem spațiul între imagini pe dispozitive mici */
 	}
-  
+
 	.image-row img {
-	  height: 75px; /* Imaginile vor fi și mai mici pe dispozitive mici */
+		height: 75px; /* Reducem dimensiunea imaginilor pe dispozitive mici */
+		width: 75px;
 	}
-  }
-  
+}
