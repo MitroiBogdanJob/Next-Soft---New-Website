@@ -108,12 +108,10 @@ export default function HeroSection() {
 					transition={{ duration: 1, delay: 0.8 }}
 					className="mt-8"
 				>
-				
-        <DualSlider
-          imagesTop={projectImagesTop}
-          imagesBottom={projectImagesBottom}
-        />
-      
+					<DualSlider
+						imagesTop={projectImagesTop}
+						imagesBottom={projectImagesBottom}
+					/>
 				</motion.div>
 			</div>
 
