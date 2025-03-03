@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import DualSlider from "./dual-slider";
+//import DualSlider from "./dual-slider";
 import { useCallback } from "react";
 
 export default function HeroSection() {
@@ -108,10 +108,12 @@ export default function HeroSection() {
 					transition={{ duration: 1, delay: 0.8 }}
 					className="mt-8"
 				>
-					<DualSlider
-						imagesTop={projectImagesTop}
-						imagesBottom={projectImagesBottom}
-					/>
+					{/*
+        <DualSlider
+          imagesTop={projectImagesTop}
+          imagesBottom={projectImagesBottom}
+        />
+      */}
 				</motion.div>
 			</div>
 
