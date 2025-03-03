@@ -29,7 +29,18 @@ const nextConfig = {
   experimental: {
     optimizeCss: true,
     optimizePackageImports: ['lucide-react', 'framer-motion', '@radix-ui/react-dropdown-menu']
-  }
+  },
+  webpack(config, { isServer }) {
+    if (!isServer) {
+      config.cache = {
+        type: 'filesystem',  // Activează cache-ul pe disc
+        buildDependencies: {
+          config: [__filename], // Reîncarcă cache-ul dacă se modifică fișierul de configurare
+        },
+      };
+    }
+    return config;
+  },
 };
 
 module.exports = nextConfig;
