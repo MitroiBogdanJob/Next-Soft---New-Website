@@ -13,15 +13,10 @@ const nextConfig = {
 			},
 		],
 	},
-	// Disable source maps in production to reduce file size
 	productionBrowserSourceMaps: false,
-	// Add trailing slash to improve compatibility
 	trailingSlash: true,
-	// Disable React strict mode for production
 	reactStrictMode: false,
-	// Enable compression
 	compress: true,
-	// Remove unsupported "optimizeFonts" and "swcMinify"
 	experimental: {
 		optimizeCss: true,
 		optimizePackageImports: [
@@ -33,9 +28,9 @@ const nextConfig = {
 	webpack(config, { isServer }) {
 		if (!isServer) {
 			config.cache = {
-				type: "filesystem", // Enable disk cache
+				type: "filesystem",
 				buildDependencies: {
-					config: [__filename], // Rebuild cache if the config file is modified
+					config: [__filename],
 				},
 			};
 		}
