@@ -132,11 +132,6 @@
 	background-color: rgba(17, 24, 39, 0.05) !important;
 }
 
-/* Enhance backdrop blur for better readability */
-.backdrop-blur-sm {
-	backdrop-filter: blur(8px);
-}
-
 /* Enhance header transparency */
 .bg-black\/40 {
 	background-color: rgba(0, 0, 0, 0.3) !important;

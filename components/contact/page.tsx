@@ -39,7 +39,7 @@ export default function ContactPage() {
 		<div className="min-h-screen">
 			{/* Hero Section */}
 			<section className="pt-32 pb-20 relative">
-				<div className="absolute inset-0 bg-black/30 backdrop-blur-sm z-0"></div>
+				<div className="absolute inset-0 bg-black/30   z-0"></div>
 				<div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 					<motion.div
 						className="max-w-4xl mx-auto text-center"
@@ -67,7 +67,7 @@ export default function ContactPage() {
 							animate={{ opacity: 1, x: 0 }}
 							transition={{ duration: 0.6, delay: 0.2 }}
 						>
-							<Card className="bg-gray-900/20 backdrop-blur-sm border-gray-800">
+							<Card className="bg-gray-900/20   border-gray-800">
 								<CardContent className="p-8">
 									<form onSubmit={handleSubmit} className="space-y-6">
 										<div className="space-y-2">
