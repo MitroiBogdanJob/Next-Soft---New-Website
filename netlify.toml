@@ -1,6 +1,6 @@
 [build]
   environment = { NODE_ENV = "production" }
-  publish = "out"  # Sau directorul unde Next.js generează build-ul
+  publish = "out"  
   command = "npm run build"
   cache = ["node_modules", ".next/cache"]
 [[plugins]]
