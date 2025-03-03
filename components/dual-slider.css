@@ -32,10 +32,19 @@
 	scroll-snap-align: start; /* Aliniază imaginile la începutul containerului */
 }
 
-@media (max-width: 480px) {
-	/* Ajustare pentru ecrane foarte mici */
+@media (max-width: 410px) {
+	.image-row {
+		width: calc(150%); /* Asigură continuitatea sliderului */
+		display: flex;
+		flex-shrink: 0;
+		gap: 10px;
+		position: relative;
+	}
+
 	.image-row img {
-		height: 20vw; /* Imagini mai mari pe ecrane foarte mici */
-		width: 20vw;
+		width: auto;
+		max-height: 100px; /* Limitează dimensiunea pentru layout frumos */
+		border-radius: 8px;
+		box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 	}
 }
