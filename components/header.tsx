@@ -13,13 +13,12 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { useMobileMenu } from "@/components/MobileMenuContext"; // Importăm useMobileMenu
 
 export default function Header() {
 	const { language, setLanguage, t } = useLanguage();
 	const [isScrolled, setIsScrolled] = useState(false);
+	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 	const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
-	const { mobileMenuOpen, setMobileMenuOpen } = useMobileMenu(); // Utilizăm contextul
 
 	// Optimize scroll handler with throttling
 	useEffect(() => {
