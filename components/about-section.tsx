@@ -92,7 +92,7 @@ export default function AboutSection() {
 						initial={{ opacity: 0, x: 30 }}
 						whileInView={{ opacity: 1, x: 0 }}
 						transition={{ duration: 0.6 }}
-						viewport={{ once: true }}
+						viewport={{ once: false }}
 						className="relative"
 					>
 						<div className="absolute -top-10 -left-10 w-40 h-40 rounded-full bg-blue-600/20 blur-3xl"></div>
