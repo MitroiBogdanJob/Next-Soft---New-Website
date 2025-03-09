@@ -32,7 +32,7 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 					{imagesTop.concat(imagesTop).map((src, index) => (
 						<div
 							key={`top-${index}`}
-							className="relative h-[15vh] flex-shrink-0 mx-[0.5vw]"
+							className="relative h-[16vh] flex-shrink-0 mx-[0.5vw]"
 						>
 							<img
 								src={src}
@@ -45,7 +45,7 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 			</div>
 
 			{/* Slider pentru imaginile de jos */}
-			<div className="relative h-[15vh]">
+			<div className="relative h-[16vh]">
 				<motion.div
 					className="flex"
 					style={{
