@@ -63,7 +63,10 @@ export default function AboutPage() {
 		},
 		{
 			year: "",
-			title: language === "ro" ? "Îmbunătățirea software-ului" : "Continuous software improvement: the key to success in the digital age",
+			title:
+				language === "ro"
+					? "Software"
+					: "Continuous software improvement: the key to success in the digital age",
 			description:
 				language === "ro"
 					? " Investim constant în optimizarea software-ului nostru, asigurându-ne că rămânem la curent cu cele mai recente tehnologii și oferim soluții eficiente și inovatoare clienților noștri."
