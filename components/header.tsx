@@ -127,12 +127,7 @@ export default function Header() {
 									</DropdownMenuContent>
 								</DropdownMenu>
 							) : (
-								<Link
-									key={item.name}
-									href={item.href}
-									className="text-sm font-medium text-gray-200 hover:text-white transition-colors"
-									prefetch={false}
-								>
+								<Link key={item.name} href={item.href} prefetch={false}>
 									{item.name}
 								</Link>
 							),
