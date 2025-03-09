@@ -271,8 +271,8 @@ const translations = {
 		ro: "Ani de Experiență",
 	},
 	"stats.team": {
-		en: "Team Members",
-		ro: "Membri în Echipă",
+		en: "Technologies Used",
+		ro: "Tehnologi Utilizate",
 	},
 
 	// Testimonials

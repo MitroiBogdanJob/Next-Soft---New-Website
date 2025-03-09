@@ -13,7 +13,7 @@ export default function AboutPage() {
 
 	const milestones = [
 		{
-			year: "2015",
+			year: "",
 			title: language === "ro" ? "Fondarea Companiei" : "Company Founded",
 			description:
 				language === "ro"
@@ -21,18 +21,18 @@ export default function AboutPage() {
 					: "NextSoft was established with a mission to deliver exceptional software solutions.",
 		},
 		{
-			year: "2017",
+			year: "",
 			title:
 				language === "ro"
-					? "Extindere în Dezvoltarea Mobilă"
-					: "Expansion to Mobile Development",
+					? "Extindere în Aplicatii Desktop"
+					: "Expansion to Desktop Development",
 			description:
 				language === "ro"
-					? "Am lansat divizia noastră de dezvoltare mobilă pentru a răspunde cerințelor crescânde ale clienților."
-					: "Launched our mobile development division to meet growing client demands.",
+					? "Am lansat divizia noastră de dezvoltare Desktop pentru a răspunde cerințelor crescânde ale clienților."
+					: "Launched our Desktop development division to meet growing client demands.",
 		},
 		{
-			year: "2019",
+			year: "",
 			title:
 				language === "ro"
 					? "Integrarea Serviciilor Cloud"
@@ -43,15 +43,15 @@ export default function AboutPage() {
 					: "Added comprehensive cloud migration and management services to our portfolio.",
 		},
 		{
-			year: "2021",
-			title: language === "ro" ? "Departamentul AI & ML" : "AI & ML Department",
+			year: "",
+			title: language === "ro" ? "Editare Video" : "Video Editing",
 			description:
 				language === "ro"
-					? "Am înființat o echipă dedicată AI și machine learning pentru a dezvolta soluții de ultimă generație."
-					: "Established dedicated AI and machine learning team to develop cutting-edge solutions.",
+					? "Am extins gama serviciilor noastre prin includerea editării video."
+					: "We have expanded our range of services to include video editing.",
 		},
 		{
-			year: "2023",
+			year: "",
 			title:
 				language === "ro"
 					? "Lansarea Marketing-ului Digital"
@@ -62,12 +62,12 @@ export default function AboutPage() {
 					: "Expanded services to include comprehensive digital marketing solutions.",
 		},
 		{
-			year: "2025",
-			title: language === "ro" ? "Extindere Globală" : "Global Expansion",
+			year: "",
+			title: language === "ro" ? "Îmbunătățirea continuă a software-ului: cheia succesului în era digitală" : "Continuous software improvement: the key to success in the digital age",
 			description:
 				language === "ro"
-					? "Am deschis noi birouri și ne-am extins echipa pentru a deservi clienți din întreaga lume."
-					: "Opened new offices and expanded our team to serve clients worldwide.",
+					? " Investim constant în optimizarea software-ului nostru, asigurându-ne că rămânem la curent cu cele mai recente tehnologii și oferim soluții eficiente și inovatoare clienților noștri."
+					: "We consistently invest in optimizing our software, ensuring we stay up-to-date with the latest technologies and provide efficient and innovative solutions to our clients.",
 		},
 	];
 
