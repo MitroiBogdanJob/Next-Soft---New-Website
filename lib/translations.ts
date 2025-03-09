@@ -272,7 +272,7 @@ const translations = {
 	},
 	"stats.team": {
 		en: "Technologies Used",
-		ro: "Tehnologi Utilizate",
+		ro: "Tehnologii Utilizate",
 	},
 
 	// Testimonials
