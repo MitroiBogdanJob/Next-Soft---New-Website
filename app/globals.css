@@ -252,3 +252,9 @@ section.relative > .absolute.inset-0.bg-black\/20 {
 		rgba(8, 145, 178, 0.4)
 	);
 }
+
+header,
+section.hero-section {
+	margin-bottom: 0 !important;
+	margin-top: 0 !important;
+}

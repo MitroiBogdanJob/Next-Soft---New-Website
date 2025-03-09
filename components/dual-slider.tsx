@@ -7,16 +7,24 @@ interface DualSliderProps {
 }
 
 const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
+	const animationDuration = 20;
+
 	return (
-		<div className="w-full overflow-hidden py-8">
+		<div className="w-full overflow-hidden py-0 mt-10">
 			{/* Slider pentru imaginile de sus */}
-			<div className="mb-4 relative h-[190px]">
+			<div className="container-card mb-4">
 				<motion.div
 					className="flex"
+					style={{
+						margin: 0,
+						padding: 0,
+						alignItems: "flex-start",
+						lineHeight: 1,
+					}}
 					initial={{ x: "0%" }}
 					animate={{ x: "-100%" }}
 					transition={{
-						duration: 25,
+						duration: animationDuration,
 						repeat: Infinity,
 						ease: "linear",
 					}}
@@ -24,7 +32,7 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 					{imagesTop.concat(imagesTop).map((src, index) => (
 						<div
 							key={`top-${index}`}
-							className="relative h-[180px] flex-shrink-0 mx-2"
+							className="relative h-[15vh] flex-shrink-0 mx-[1vw]"
 						>
 							<img
 								src={src}
@@ -37,13 +45,19 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 			</div>
 
 			{/* Slider pentru imaginile de jos */}
-			<div className="relative h-[190px]">
+			<div className="relative h-[15vh]">
 				<motion.div
 					className="flex"
-					initial={{ x: "-190%" }}
+					style={{
+						margin: 0,
+						padding: 0,
+						alignItems: "flex-start",
+						lineHeight: 1,
+					}}
+					initial={{ x: "-100%" }}
 					animate={{ x: "0%" }}
 					transition={{
-						duration: 25,
+						duration: animationDuration,
 						repeat: Infinity,
 						ease: "linear",
 					}}
@@ -51,7 +65,7 @@ const DualSlider: React.FC<DualSliderProps> = ({ imagesTop, imagesBottom }) => {
 					{imagesBottom.concat(imagesBottom).map((src, index) => (
 						<div
 							key={`bottom-${index}`}
-							className="relative h-[180px] flex-shrink-0 mx-2"
+							className="relative h-[15vh] flex-shrink-0 mx-[1vw]"
 						>
 							<img
 								src={src}

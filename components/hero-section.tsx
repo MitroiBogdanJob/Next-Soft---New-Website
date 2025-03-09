@@ -50,15 +50,15 @@ export default function HeroSection() {
 	}, []);
 
 	return (
-		<section className="relative min-h-screen flex flex-col justify-center pt-24">
+		<section className="flex-col justify-center pt-0">
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
 				<motion.div
 					initial={{ opacity: 0, y: 20 }}
 					animate={{ opacity: 1, y: 0 }}
 					transition={{ duration: 0.6 }}
-					className="max-w-4xl mx-auto text-center mb-12"
+					className="max-w-4xl mx-auto text-center mb-4"
 				>
-					<h1 className="text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">
+					<h1 className="mt-12 text-2xl md:text-3xl lg:text-4xl font-bold text-white leading-tight mb-4">
 						{language === "ro"
 							? "Transformăm Ideile tale în Software"
 							: "Transforming Your Ideas into Software"}
@@ -94,7 +94,7 @@ export default function HeroSection() {
 							variant="outline"
 							size="lg"
 							onClick={scrollToServices}
-							className="border-gray-600 text-white hover:bg-gray-800 px-6 py-5 text-base"
+							className="border-gray-600 text-white hover:bg-gray-800 px-6 py-5 text-base "
 						>
 							{t("hero.secondary")}
 						</Button>
@@ -106,7 +106,7 @@ export default function HeroSection() {
 					initial={{ opacity: 0 }}
 					animate={{ opacity: 1 }}
 					transition={{ duration: 1, delay: 0.8 }}
-					className="mt-8"
+					className="mt-0"
 				>
 					<DualSlider
 						imagesTop={projectImagesTop}
