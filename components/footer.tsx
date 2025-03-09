@@ -29,19 +29,16 @@ export default function Footer() {
 							className="flex items-center space-x-2"
 							prefetch={false}
 						>
-							<div className="relative h-10 w-10">
+							<div className="relative h-29 w-29">
 								<Image
 									src="/images/logo.png"
 									alt="NextSoft Logo"
-									width={40}
-									height={40}
+									width={60}
+									height={60}
 									className="object-contain"
 									priority
 								/>
 							</div>
-							<span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-								NextSoft
-							</span>
 						</Link>
 						<p className="text-gray-400 text-sm">
 							{language === "ro"

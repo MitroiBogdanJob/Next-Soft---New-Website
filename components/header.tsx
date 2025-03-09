@@ -85,20 +85,17 @@ export default function Header() {
 			<div className="container mx-auto px-4 sm:px-6 lg:px-8">
 				<div className="flex justify-between items-center py-4">
 					{/* Logo */}
-					<Link href="/" className="flex items-center space-x-2">
-						<div className="relative h-12 w-12">
+					<Link href="/" className="">
+						<div className="relative h-20 w-20 logo">
 							<Image
 								src="/images/logo.png"
 								alt="NextSoft Logo"
-								width={58}
+								width={72}
 								height={58}
 								priority
 								className="object-contain"
 							/>
 						</div>
-						<span className="text-2xl font-bold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent">
-							NextSoft
-						</span>
 					</Link>
 
 					{/* Desktop Navigation */}
