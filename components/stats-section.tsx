@@ -65,7 +65,7 @@ export default function StatsSection() {
 
 	const stats = [
 		{ value: 250, label: t("stats.projects"), suffix: "+" },
-		{ value: 120, label: t("stats.clients"), suffix: "+" },
+		{ value: 200, label: t("stats.clients"), suffix: "+" },
 		{ value: 10, label: t("stats.years"), suffix: "+" },
 		{ value: 35, label: t("stats.team"), suffix: "" },
 	];
