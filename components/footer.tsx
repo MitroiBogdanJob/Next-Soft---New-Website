@@ -55,32 +55,24 @@ export default function Footer() {
 								rel="noopener noreferrer"
 								className="text-gray-400 hover:text-white transition-colors"
 								aria-label="Facebook"
-							>
-								<Facebook size={20} />
-							</a>
+							></a>
 							<a
 								href="#"
 								className="text-gray-400 hover:text-white transition-colors"
 								aria-label="Twitter"
-							>
-								<Twitter size={20} />
-							</a>
+							></a>
 							<a
 								href="#"
 								className="text-gray-400 hover:text-white transition-colors"
 								aria-label="LinkedIn"
-							>
-								<Linkedin size={20} />
-							</a>
+							></a>
 							<a
 								href="https://www.instagram.com/next.soft/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="text-gray-400 hover:text-white transition-colors"
 								aria-label="Instagram"
-							>
-								<Instagram size={20} />
-							</a>
+							></a>
 						</div>
 					</div>
 
