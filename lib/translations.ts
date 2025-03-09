@@ -266,9 +266,9 @@ const translations = {
 		en: "Satisfied Clients",
 		ro: "Clienți Mulțumiți",
 	},
-	"stats.years": {
-		en: "Years of Experience",
-		ro: "Ani de Experiență",
+	"stats.frameworks": {
+		en: "Frameworks used",
+		ro: "Framework-uri utilizate",
 	},
 	"stats.team": {
 		en: "Technologies Used",
