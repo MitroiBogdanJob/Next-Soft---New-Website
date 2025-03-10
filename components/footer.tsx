@@ -42,7 +42,7 @@ export default function Footer() {
 						</Link>
 						<p className="text-gray-400 text-sm">
 							{language === "ro"
-								? "Oferim soluții software de clasă mondială și servicii de marketing digital pentru a ajuta afacerile să prospere în era digitală."
+								? "Oferim soluții software și servicii de marketing digital pentru a ajuta afacerile să prospere în era digitală."
 								: "We provide world-class software solutions and digital marketing services to help businesses thrive in the digital era."}
 						</p>
 						<div className="flex space-x-4">
