@@ -23,8 +23,7 @@ export default function HeroSection() {
 		"/images/projects/Mobile 4.webp",
 		"/images/projects/Project 1.webp",
 		"/images/projects/Mobile 1.webp",
-		"/images/projects/Project 1.webp",
-		"/images/projects/Mobile 1.webp",
+	
 	];
 
 	const projectImagesBottom = [
@@ -38,8 +37,7 @@ export default function HeroSection() {
 		"/images/projects/Mobile 4.webp",
 		"/images/projects/Project 1.webp",
 		"/images/projects/Mobile 1.webp",
-		"/images/projects/Project 1.webp",
-		"/images/projects/Mobile 1.webp",
+
 	];
 
 	const scrollToServices = useCallback(() => {
